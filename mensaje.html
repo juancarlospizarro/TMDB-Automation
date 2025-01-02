@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #peliculas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pelicula{
+            border: 2px solid white;
+            padding: 1%;
+            overflow: hidden;
+            vertical-align: top;
+            display: inline-block;
+            background-color: #032541;
+            margin-bottom: 2%;
+            margin-right: 2%;
+        }
+
+        .poster {
+            text-align: center;
+            width: 100%;  
+            height: auto;
+        }
+
+        .info{
+            text-align: center;
+            line-clamp: 2;
+            color: white;
+        }
+
+        .info h3{
+            overflow-wrap: break-word;
+            width: 250px;
+            text-align: center;
+        }
+
+        .info p{
+            font-style: italic;
+        }
+
+        h1{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Películas Populares TMDB</h1>
+
+    <div id="películas">
+        {{ peliculas }}
+    </div>
+
+</body>
+</html>
